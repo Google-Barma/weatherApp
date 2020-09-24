@@ -1,12 +1,22 @@
 import refs from './refs';
 import weatherApi from './weatherApi';
 
-refs.queryForm.addEventListener('submit', event => {
+refs.queryForm.addEventListener('submit', handleSubmitBtn);
+
+function handleSubmitBtn(event) {
   event.preventDefault();
 
-  weatherApi.cityName = event.target.elements.query.value;
+  const city = event.target.elements.query.value;
+  weatherApi.setCityName(city);
+
+  getCurrentWeather();
+}
+
+function getCurrentWeather() {
   weatherApi
-    .fetchCityWeather()
-    .then(result => console.log(result))
+    .fetchFetchCurrentWeatherInCity()
+    .then(data => {
+      console.log(data);
+    })
     .catch(error => console.log(error));
-});
+}

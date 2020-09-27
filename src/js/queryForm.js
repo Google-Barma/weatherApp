@@ -8,7 +8,7 @@ function handleSubmitBtn(event) {
   event.preventDefault();
 
   getInputCity(event);
-  getCurrentWeather();
+  getCurrentWeatherInCity();
 }
 
 function getInputCity(event) {
@@ -16,13 +16,11 @@ function getInputCity(event) {
   weatherApi.setCityNameToUrl(city);
 }
 
-function getCurrentWeather() {
+function getCurrentWeatherInCity() {
   weatherApi
     .fetchFetchCurrentWeatherInCity()
     .then(data => {
-      weatherApi.currentCityWeather = data;
-      console.log(weatherApi.currentCityWeather);
-      createWeatherMarkup();
+      createWeatherMarkup(data);
     })
     .catch(error => console.log(error));
 }

@@ -1,0 +1,27 @@
+.town-query {
+  &__form {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(40);
+  }
+
+  &__input {
+    flex-basis: rem(300);
+    height: rem(30);
+    border: solid 2px #008080;
+    border-radius: 10px;
+    margin-right: rem(30);
+    outline: none;
+    padding-left: rem(15);
+  }
+
+  &__submit {
+    border: solid 1px #008080;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: turquoise;
+    outline: none;
+    box-shadow: inset 0px 0px 6px 0px #535353;
+  }
+}

@@ -7,7 +7,7 @@ export default {
   currentPosition: {},
 
   async fetchFetchCurrentWeatherInCity() {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${this.queryCityName}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.queryCityName}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
 
     try {
       const response = await fetch(url);
@@ -26,13 +26,15 @@ export default {
   },
 
   async fetchCurrentGeolocationWeather() {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+    // const url = `http://api.openweathermap.org/data/2.5/weather?q=lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+    const url =
+      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/temp.json';
 
     try {
       const response = await fetch(url);
       const { weather, main, name, sys, timezone } = await response.json();
 
-      this.getWeatherData(this.cityCurrentWeather, {
+      this.getWeatherData(this.currentWeather, {
         weather,
         main,
         name,
@@ -54,6 +56,6 @@ export default {
     position.minTemp = Math.round(main.temp_min);
     position.weatherDescription = weather[0].description;
     position.name = name;
-    position.weatherDescriptionIcon = `http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
+    position.weatherDescriptionIcon = `https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
   },
 };

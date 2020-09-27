@@ -1,10 +1,12 @@
-<div class="weather__wrapper">
+<div class="weather__block">
     <h3 class="weather__title">Город: {{name}}</h3>
-    <p class="weather__temp">Температура: {{currentTemp}}</p>
-    <p class="weather__max-temp">Макс. температура: {{maxTemp}}</p>
-    <p class="weather__max-temp">Мин. температура: {{minTemp}}</p>
-    <p class="weather__description">{{weatherDescription}}</p>
-    <p class="date">Сегодня: </p>
+    <div class="weather__text-container">
+        <p class="weather__temp">Температура: {{currentTemp}}</p>
+        <p class="weather__max-temp">Макс. температура: {{maxTemp}}</p>
+        <p class="weather__max-temp">Мин. температура: {{minTemp}}</p>
+        <p class="weather__description">{{weatherDescription}}</p>
+        <p class="weather__date">Сегодня: </p>
+    </div>
     <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image">
 
 </div>

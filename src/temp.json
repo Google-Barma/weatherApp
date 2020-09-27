@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 28.68,
+    "lat": 50.26
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "ясно",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 9.3,
+    "feels_like": 6.61,
+    "temp_min": 9.3,
+    "temp_max": 9.3,
+    "pressure": 1017,
+    "humidity": 89,
+    "sea_level": 1017,
+    "grnd_level": 990
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.03,
+    "deg": 264
+  },
+  "clouds": {
+    "all": 6
+  },
+  "dt": 1601243957,
+  "sys": {
+    "country": "UA",
+    "sunrise": 1601265662,
+    "sunset": 1601308234
+  },
+  "timezone": 10800,
+  "id": 686967,
+  "name": "Житомир",
+  "cod": 200
+}

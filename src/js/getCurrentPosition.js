@@ -13,6 +13,5 @@ function getCurrentPosition() {
 getCurrentPosition()
   .then(resolve => {
     weatherApi.currentPosition = resolve.coords;
-    console.log(weatherApi.currentPosition);
   })
   .catch(error => console.log(error));

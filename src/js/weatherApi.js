@@ -57,5 +57,12 @@ export default {
     position.weatherDescription = weather[0].description;
     position.name = name;
     position.weatherDescriptionIcon = `https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
+    position.dateNow = this.getLocaleDateNow();
+  },
+
+  getLocaleDateNow() {
+    const date = new Date();
+
+    return date.toLocaleDateString();
   },
 };

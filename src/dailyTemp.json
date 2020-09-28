@@ -4,350 +4,308 @@
   "timezone": "America/Chicago",
   "timezone_offset": -18000,
   "current": {
-    "dt": 1601282767,
+    "dt": 1601288176,
     "sunrise": 1601294919,
     "sunset": 1601337868,
-    "temp": 290.56,
-    "feels_like": 286.58,
-    "pressure": 1009,
-    "humidity": 88,
-    "dew_point": 288.55,
+    "temp": 17.01,
+    "feels_like": 13.59,
+    "pressure": 1012,
+    "humidity": 77,
+    "dew_point": 12.95,
     "uvi": 6.09,
     "clouds": 90,
     "visibility": 10000,
-    "wind_speed": 8.2,
-    "wind_deg": 330,
-    "wind_gust": 14.4,
+    "wind_speed": 6.2,
+    "wind_deg": 10,
+    "wind_gust": 9.8,
     "weather": [
       {
         "id": 804,
         "main": "Clouds",
-        "description": "overcast clouds",
+        "description": "пасмурно",
         "icon": "04n"
       }
     ]
   },
   "minutely": [
     {
-      "dt": 1601282820,
+      "dt": 1601288220,
       "precipitation": 0
     },
     {
-      "dt": 1601282880,
+      "dt": 1601288280,
       "precipitation": 0
     },
     {
-      "dt": 1601282940,
+      "dt": 1601288340,
       "precipitation": 0
     },
     {
-      "dt": 1601283000,
+      "dt": 1601288400,
       "precipitation": 0
     },
     {
-      "dt": 1601283060,
+      "dt": 1601288460,
       "precipitation": 0
     },
     {
-      "dt": 1601283120,
+      "dt": 1601288520,
       "precipitation": 0
     },
     {
-      "dt": 1601283180,
+      "dt": 1601288580,
       "precipitation": 0
     },
     {
-      "dt": 1601283240,
+      "dt": 1601288640,
       "precipitation": 0
     },
     {
-      "dt": 1601283300,
+      "dt": 1601288700,
       "precipitation": 0
     },
     {
-      "dt": 1601283360,
+      "dt": 1601288760,
       "precipitation": 0
     },
     {
-      "dt": 1601283420,
+      "dt": 1601288820,
       "precipitation": 0
     },
     {
-      "dt": 1601283480,
+      "dt": 1601288880,
       "precipitation": 0
     },
     {
-      "dt": 1601283540,
+      "dt": 1601288940,
       "precipitation": 0
     },
     {
-      "dt": 1601283600,
+      "dt": 1601289000,
       "precipitation": 0
     },
     {
-      "dt": 1601283660,
+      "dt": 1601289060,
       "precipitation": 0
     },
     {
-      "dt": 1601283720,
+      "dt": 1601289120,
       "precipitation": 0
     },
     {
-      "dt": 1601283780,
+      "dt": 1601289180,
       "precipitation": 0
     },
     {
-      "dt": 1601283840,
+      "dt": 1601289240,
       "precipitation": 0
     },
     {
-      "dt": 1601283900,
+      "dt": 1601289300,
       "precipitation": 0
     },
     {
-      "dt": 1601283960,
+      "dt": 1601289360,
       "precipitation": 0
     },
     {
-      "dt": 1601284020,
+      "dt": 1601289420,
       "precipitation": 0
     },
     {
-      "dt": 1601284080,
+      "dt": 1601289480,
       "precipitation": 0
     },
     {
-      "dt": 1601284140,
+      "dt": 1601289540,
       "precipitation": 0
     },
     {
-      "dt": 1601284200,
+      "dt": 1601289600,
       "precipitation": 0
     },
     {
-      "dt": 1601284260,
+      "dt": 1601289660,
       "precipitation": 0
     },
     {
-      "dt": 1601284320,
+      "dt": 1601289720,
       "precipitation": 0
     },
     {
-      "dt": 1601284380,
+      "dt": 1601289780,
       "precipitation": 0
     },
     {
-      "dt": 1601284440,
+      "dt": 1601289840,
       "precipitation": 0
     },
     {
-      "dt": 1601284500,
+      "dt": 1601289900,
       "precipitation": 0
     },
     {
-      "dt": 1601284560,
+      "dt": 1601289960,
       "precipitation": 0
     },
     {
-      "dt": 1601284620,
+      "dt": 1601290020,
       "precipitation": 0
     },
     {
-      "dt": 1601284680,
+      "dt": 1601290080,
       "precipitation": 0
     },
     {
-      "dt": 1601284740,
+      "dt": 1601290140,
       "precipitation": 0
     },
     {
-      "dt": 1601284800,
+      "dt": 1601290200,
       "precipitation": 0
     },
     {
-      "dt": 1601284860,
+      "dt": 1601290260,
       "precipitation": 0
     },
     {
-      "dt": 1601284920,
+      "dt": 1601290320,
       "precipitation": 0
     },
     {
-      "dt": 1601284980,
+      "dt": 1601290380,
       "precipitation": 0
     },
     {
-      "dt": 1601285040,
+      "dt": 1601290440,
       "precipitation": 0
     },
     {
-      "dt": 1601285100,
+      "dt": 1601290500,
       "precipitation": 0
     },
     {
-      "dt": 1601285160,
+      "dt": 1601290560,
       "precipitation": 0
     },
     {
-      "dt": 1601285220,
+      "dt": 1601290620,
       "precipitation": 0
     },
     {
-      "dt": 1601285280,
+      "dt": 1601290680,
       "precipitation": 0
     },
     {
-      "dt": 1601285340,
+      "dt": 1601290740,
       "precipitation": 0
     },
     {
-      "dt": 1601285400,
+      "dt": 1601290800,
       "precipitation": 0
     },
     {
-      "dt": 1601285460,
+      "dt": 1601290860,
       "precipitation": 0
     },
     {
-      "dt": 1601285520,
+      "dt": 1601290920,
       "precipitation": 0
     },
     {
-      "dt": 1601285580,
+      "dt": 1601290980,
       "precipitation": 0
     },
     {
-      "dt": 1601285640,
+      "dt": 1601291040,
       "precipitation": 0
     },
     {
-      "dt": 1601285700,
+      "dt": 1601291100,
       "precipitation": 0
     },
     {
-      "dt": 1601285760,
+      "dt": 1601291160,
       "precipitation": 0
     },
     {
-      "dt": 1601285820,
+      "dt": 1601291220,
       "precipitation": 0
     },
     {
-      "dt": 1601285880,
+      "dt": 1601291280,
       "precipitation": 0
     },
     {
-      "dt": 1601285940,
+      "dt": 1601291340,
       "precipitation": 0
     },
     {
-      "dt": 1601286000,
+      "dt": 1601291400,
       "precipitation": 0
     },
     {
-      "dt": 1601286060,
+      "dt": 1601291460,
       "precipitation": 0
     },
     {
-      "dt": 1601286120,
+      "dt": 1601291520,
       "precipitation": 0
     },
     {
-      "dt": 1601286180,
+      "dt": 1601291580,
       "precipitation": 0
     },
     {
-      "dt": 1601286240,
+      "dt": 1601291640,
       "precipitation": 0
     },
     {
-      "dt": 1601286300,
+      "dt": 1601291700,
       "precipitation": 0
     },
     {
-      "dt": 1601286360,
+      "dt": 1601291760,
       "precipitation": 0
     },
     {
-      "dt": 1601286420,
+      "dt": 1601291820,
       "precipitation": 0
     }
   ],
   "hourly": [
     {
-      "dt": 1601280000,
-      "temp": 290.56,
-      "feels_like": 286.15,
-      "pressure": 1009,
-      "humidity": 88,
-      "dew_point": 288.55,
-      "clouds": 90,
-      "visibility": 10000,
-      "wind_speed": 8.81,
-      "wind_deg": 337,
-      "weather": [
-        {
-          "id": 501,
-          "main": "Rain",
-          "description": "moderate rain",
-          "icon": "10n"
-        }
-      ],
-      "pop": 1,
-      "rain": {
-        "1h": 2.7
-      }
-    },
-    {
-      "dt": 1601283600,
-      "temp": 289.74,
-      "feels_like": 285.18,
-      "pressure": 1009,
-      "humidity": 89,
-      "dew_point": 287.92,
-      "clouds": 95,
-      "visibility": 10000,
-      "wind_speed": 8.71,
-      "wind_deg": 360,
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "pop": 0.8
-    },
-    {
       "dt": 1601287200,
-      "temp": 288.97,
-      "feels_like": 284.97,
-      "pressure": 1011,
-      "humidity": 88,
-      "dew_point": 286.99,
-      "clouds": 98,
+      "temp": 17.01,
+      "feels_like": 12.72,
+      "pressure": 1012,
+      "humidity": 77,
+      "dew_point": 12.95,
+      "clouds": 90,
       "visibility": 10000,
       "wind_speed": 7.44,
       "wind_deg": 360,
       "weather": [
         {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
+          "id": 500,
+          "main": "Rain",
+          "description": "небольшой дождь",
+          "icon": "10n"
         }
       ],
-      "pop": 0.8
+      "pop": 1,
+      "rain": {
+        "1h": 0.4
+      }
     },
     {
       "dt": 1601290800,
-      "temp": 288.48,
-      "feels_like": 285.25,
+      "temp": 16.12,
+      "feels_like": 12.85,
       "pressure": 1012,
-      "humidity": 87,
-      "dew_point": 286.33,
-      "clouds": 99,
+      "humidity": 82,
+      "dew_point": 13.05,
+      "clouds": 95,
       "visibility": 10000,
       "wind_speed": 6.03,
       "wind_deg": 359,
@@ -355,7 +313,7 @@
         {
           "id": 804,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "пасмурно",
           "icon": "04n"
         }
       ],
@@ -363,12 +321,12 @@
     },
     {
       "dt": 1601294400,
-      "temp": 287.97,
-      "feels_like": 285.26,
+      "temp": 15.28,
+      "feels_like": 12.65,
       "pressure": 1014,
-      "humidity": 84,
-      "dew_point": 285.3,
-      "clouds": 96,
+      "humidity": 83,
+      "dew_point": 12.41,
+      "clouds": 95,
       "visibility": 10000,
       "wind_speed": 4.82,
       "wind_deg": 0,
@@ -376,7 +334,7 @@
         {
           "id": 804,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "пасмурно",
           "icon": "04n"
         }
       ],
@@ -384,12 +342,12 @@
     },
     {
       "dt": 1601298000,
-      "temp": 287.88,
-      "feels_like": 285.15,
+      "temp": 14.88,
+      "feels_like": 12.19,
       "pressure": 1015,
       "humidity": 82,
-      "dew_point": 284.88,
-      "clouds": 99,
+      "dew_point": 11.84,
+      "clouds": 98,
       "visibility": 10000,
       "wind_speed": 4.65,
       "wind_deg": 348,
@@ -397,7 +355,7 @@
         {
           "id": 804,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "пасмурно",
           "icon": "04d"
         }
       ],
@@ -405,11 +363,11 @@
     },
     {
       "dt": 1601301600,
-      "temp": 288.36,
-      "feels_like": 284.56,
+      "temp": 15.22,
+      "feels_like": 11.42,
       "pressure": 1016,
       "humidity": 76,
-      "dew_point": 284.35,
+      "dew_point": 11.02,
       "clouds": 90,
       "visibility": 10000,
       "wind_speed": 5.9,
@@ -418,7 +376,7 @@
         {
           "id": 804,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "пасмурно",
           "icon": "04d"
         }
       ],
@@ -426,11 +384,11 @@
     },
     {
       "dt": 1601305200,
-      "temp": 288.84,
-      "feels_like": 285.31,
+      "temp": 15.69,
+      "feels_like": 12.16,
       "pressure": 1017,
       "humidity": 72,
-      "dew_point": 283.99,
+      "dew_point": 10.84,
       "clouds": 92,
       "visibility": 10000,
       "wind_speed": 5.36,
@@ -439,7 +397,7 @@
         {
           "id": 804,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "пасмурно",
           "icon": "04d"
         }
       ],
@@ -447,11 +405,11 @@
     },
     {
       "dt": 1601308800,
-      "temp": 291.16,
-      "feels_like": 286.82,
+      "temp": 18.01,
+      "feels_like": 13.67,
       "pressure": 1018,
       "humidity": 59,
-      "dew_point": 283.09,
+      "dew_point": 9.94,
       "clouds": 86,
       "visibility": 10000,
       "wind_speed": 6.21,
@@ -460,7 +418,7 @@
         {
           "id": 804,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "пасмурно",
           "icon": "04d"
         }
       ],
@@ -468,11 +426,11 @@
     },
     {
       "dt": 1601312400,
-      "temp": 293.75,
-      "feels_like": 289.34,
+      "temp": 20.6,
+      "feels_like": 16.19,
       "pressure": 1018,
       "humidity": 49,
-      "dew_point": 282.91,
+      "dew_point": 9.76,
       "clouds": 69,
       "visibility": 10000,
       "wind_speed": 6.17,
@@ -481,7 +439,7 @@
         {
           "id": 803,
           "main": "Clouds",
-          "description": "broken clouds",
+          "description": "облачно с прояснениями",
           "icon": "04d"
         }
       ],
@@ -489,11 +447,11 @@
     },
     {
       "dt": 1601316000,
-      "temp": 294.99,
-      "feels_like": 290.61,
+      "temp": 21.84,
+      "feels_like": 17.46,
       "pressure": 1018,
       "humidity": 46,
-      "dew_point": 283.05,
+      "dew_point": 9.9,
       "clouds": 58,
       "visibility": 10000,
       "wind_speed": 6.2,
@@ -502,7 +460,7 @@
         {
           "id": 803,
           "main": "Clouds",
-          "description": "broken clouds",
+          "description": "облачно с прояснениями",
           "icon": "04d"
         }
       ],
@@ -510,11 +468,11 @@
     },
     {
       "dt": 1601319600,
-      "temp": 295.33,
-      "feels_like": 291.11,
+      "temp": 22.18,
+      "feels_like": 17.96,
       "pressure": 1017,
       "humidity": 45,
-      "dew_point": 283.02,
+      "dew_point": 9.87,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 5.97,
@@ -523,7 +481,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -531,11 +489,11 @@
     },
     {
       "dt": 1601323200,
-      "temp": 295.45,
-      "feels_like": 291.41,
+      "temp": 22.3,
+      "feels_like": 18.26,
       "pressure": 1016,
       "humidity": 45,
-      "dew_point": 283,
+      "dew_point": 9.85,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 5.76,
@@ -544,7 +502,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -552,11 +510,11 @@
     },
     {
       "dt": 1601326800,
-      "temp": 295.09,
-      "feels_like": 291.08,
+      "temp": 21.94,
+      "feels_like": 17.93,
       "pressure": 1016,
       "humidity": 46,
-      "dew_point": 283.12,
+      "dew_point": 9.97,
       "clouds": 8,
       "visibility": 10000,
       "wind_speed": 5.71,
@@ -565,7 +523,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -573,11 +531,11 @@
     },
     {
       "dt": 1601330400,
-      "temp": 294.5,
-      "feels_like": 291.42,
+      "temp": 21.35,
+      "feels_like": 18.27,
       "pressure": 1015,
       "humidity": 51,
-      "dew_point": 284.13,
+      "dew_point": 10.98,
       "clouds": 10,
       "visibility": 10000,
       "wind_speed": 4.78,
@@ -586,7 +544,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -594,11 +552,11 @@
     },
     {
       "dt": 1601334000,
-      "temp": 292.91,
-      "feels_like": 290.58,
+      "temp": 19.76,
+      "feels_like": 17.43,
       "pressure": 1016,
       "humidity": 58,
-      "dew_point": 284.53,
+      "dew_point": 11.38,
       "clouds": 8,
       "visibility": 10000,
       "wind_speed": 3.9,
@@ -607,7 +565,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -615,11 +573,11 @@
     },
     {
       "dt": 1601337600,
-      "temp": 290.43,
-      "feels_like": 287.65,
+      "temp": 17.28,
+      "feels_like": 14.5,
       "pressure": 1017,
       "humidity": 61,
-      "dew_point": 282.92,
+      "dew_point": 9.77,
       "clouds": 7,
       "visibility": 10000,
       "wind_speed": 3.92,
@@ -628,7 +586,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -636,11 +594,11 @@
     },
     {
       "dt": 1601341200,
-      "temp": 289.72,
-      "feels_like": 286.2,
+      "temp": 16.57,
+      "feels_like": 13.05,
       "pressure": 1018,
       "humidity": 58,
-      "dew_point": 281.57,
+      "dew_point": 8.42,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 4.46,
@@ -649,7 +607,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -657,11 +615,11 @@
     },
     {
       "dt": 1601344800,
-      "temp": 288.78,
-      "feels_like": 285.77,
+      "temp": 15.63,
+      "feels_like": 12.62,
       "pressure": 1019,
       "humidity": 59,
-      "dew_point": 280.99,
+      "dew_point": 7.84,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.51,
@@ -670,7 +628,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -678,11 +636,11 @@
     },
     {
       "dt": 1601348400,
-      "temp": 287.83,
-      "feels_like": 285.17,
+      "temp": 14.68,
+      "feels_like": 12.02,
       "pressure": 1019,
       "humidity": 63,
-      "dew_point": 280.87,
+      "dew_point": 7.72,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.03,
@@ -691,7 +649,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -699,11 +657,11 @@
     },
     {
       "dt": 1601352000,
-      "temp": 287.06,
-      "feels_like": 284.3,
+      "temp": 13.91,
+      "feels_like": 11.15,
       "pressure": 1020,
       "humidity": 66,
-      "dew_point": 280.94,
+      "dew_point": 7.79,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.17,
@@ -712,7 +670,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -720,11 +678,11 @@
     },
     {
       "dt": 1601355600,
-      "temp": 286.45,
-      "feels_like": 283.68,
+      "temp": 13.3,
+      "feels_like": 10.53,
       "pressure": 1019,
       "humidity": 68,
-      "dew_point": 280.75,
+      "dew_point": 7.6,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.13,
@@ -733,7 +691,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -741,11 +699,11 @@
     },
     {
       "dt": 1601359200,
-      "temp": 286.03,
-      "feels_like": 283.24,
+      "temp": 12.88,
+      "feels_like": 10.09,
       "pressure": 1019,
       "humidity": 67,
-      "dew_point": 280.19,
+      "dew_point": 7.04,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.96,
@@ -754,7 +712,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -762,11 +720,11 @@
     },
     {
       "dt": 1601362800,
-      "temp": 285.75,
-      "feels_like": 282.98,
+      "temp": 12.6,
+      "feels_like": 9.83,
       "pressure": 1019,
       "humidity": 66,
-      "dew_point": 279.73,
+      "dew_point": 6.58,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.77,
@@ -775,7 +733,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -783,11 +741,11 @@
     },
     {
       "dt": 1601366400,
-      "temp": 285.46,
-      "feels_like": 282.75,
+      "temp": 12.31,
+      "feels_like": 9.6,
       "pressure": 1019,
       "humidity": 66,
-      "dew_point": 279.39,
+      "dew_point": 6.24,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.6,
@@ -796,7 +754,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -804,11 +762,11 @@
     },
     {
       "dt": 1601370000,
-      "temp": 284.94,
-      "feels_like": 282.23,
+      "temp": 11.79,
+      "feels_like": 9.08,
       "pressure": 1019,
       "humidity": 67,
-      "dew_point": 279.22,
+      "dew_point": 6.07,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.52,
@@ -817,7 +775,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -825,11 +783,11 @@
     },
     {
       "dt": 1601373600,
-      "temp": 284.64,
-      "feels_like": 282.02,
+      "temp": 11.49,
+      "feels_like": 8.87,
       "pressure": 1019,
       "humidity": 68,
-      "dew_point": 279.08,
+      "dew_point": 5.93,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.37,
@@ -838,7 +796,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -846,11 +804,11 @@
     },
     {
       "dt": 1601377200,
-      "temp": 284.39,
-      "feels_like": 281.99,
+      "temp": 11.24,
+      "feels_like": 8.84,
       "pressure": 1019,
       "humidity": 69,
-      "dew_point": 279.03,
+      "dew_point": 5.88,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.05,
@@ -859,7 +817,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -867,11 +825,11 @@
     },
     {
       "dt": 1601380800,
-      "temp": 284.26,
-      "feels_like": 281.68,
+      "temp": 11.11,
+      "feels_like": 8.53,
       "pressure": 1019,
       "humidity": 71,
-      "dew_point": 279.22,
+      "dew_point": 6.07,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.39,
@@ -880,7 +838,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -888,11 +846,11 @@
     },
     {
       "dt": 1601384400,
-      "temp": 284.85,
-      "feels_like": 282.49,
+      "temp": 11.7,
+      "feels_like": 9.34,
       "pressure": 1019,
       "humidity": 76,
-      "dew_point": 280.83,
+      "dew_point": 7.68,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.57,
@@ -901,7 +859,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -909,11 +867,11 @@
     },
     {
       "dt": 1601388000,
-      "temp": 287.56,
-      "feels_like": 285.15,
+      "temp": 14.41,
+      "feels_like": 12,
       "pressure": 1020,
       "humidity": 68,
-      "dew_point": 281.79,
+      "dew_point": 8.64,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.98,
@@ -922,7 +880,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -930,11 +888,11 @@
     },
     {
       "dt": 1601391600,
-      "temp": 289.82,
-      "feels_like": 286.99,
+      "temp": 16.67,
+      "feels_like": 13.84,
       "pressure": 1020,
       "humidity": 59,
-      "dew_point": 281.83,
+      "dew_point": 8.68,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.6,
@@ -943,7 +901,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -951,11 +909,11 @@
     },
     {
       "dt": 1601395200,
-      "temp": 291.96,
-      "feels_like": 288.9,
+      "temp": 18.81,
+      "feels_like": 15.75,
       "pressure": 1020,
       "humidity": 51,
-      "dew_point": 281.73,
+      "dew_point": 8.58,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.86,
@@ -964,7 +922,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -972,11 +930,11 @@
     },
     {
       "dt": 1601398800,
-      "temp": 293.44,
-      "feels_like": 289.99,
+      "temp": 20.29,
+      "feels_like": 16.84,
       "pressure": 1019,
       "humidity": 46,
-      "dew_point": 281.65,
+      "dew_point": 8.5,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 4.36,
@@ -985,7 +943,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -993,11 +951,11 @@
     },
     {
       "dt": 1601402400,
-      "temp": 294.52,
-      "feels_like": 290.77,
+      "temp": 21.37,
+      "feels_like": 17.62,
       "pressure": 1018,
       "humidity": 42,
-      "dew_point": 281.4,
+      "dew_point": 8.25,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 4.66,
@@ -1006,7 +964,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -1014,11 +972,11 @@
     },
     {
       "dt": 1601406000,
-      "temp": 295.25,
-      "feels_like": 291.43,
+      "temp": 22.1,
+      "feels_like": 18.28,
       "pressure": 1018,
       "humidity": 41,
-      "dew_point": 281.48,
+      "dew_point": 8.33,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 4.87,
@@ -1027,7 +985,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -1035,11 +993,11 @@
     },
     {
       "dt": 1601409600,
-      "temp": 295.38,
-      "feels_like": 291.41,
+      "temp": 22.23,
+      "feels_like": 18.26,
       "pressure": 1017,
       "humidity": 41,
-      "dew_point": 281.66,
+      "dew_point": 8.51,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 5.13,
@@ -1048,7 +1006,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -1056,11 +1014,11 @@
     },
     {
       "dt": 1601413200,
-      "temp": 294.95,
-      "feels_like": 290.9,
+      "temp": 21.8,
+      "feels_like": 17.75,
       "pressure": 1016,
       "humidity": 43,
-      "dew_point": 281.95,
+      "dew_point": 8.8,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 5.35,
@@ -1069,7 +1027,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -1077,11 +1035,11 @@
     },
     {
       "dt": 1601416800,
-      "temp": 294.19,
-      "feels_like": 290.99,
+      "temp": 21.04,
+      "feels_like": 17.84,
       "pressure": 1016,
       "humidity": 49,
-      "dew_point": 283.33,
+      "dew_point": 10.18,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 4.6,
@@ -1090,7 +1048,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -1098,11 +1056,11 @@
     },
     {
       "dt": 1601420400,
-      "temp": 292.32,
-      "feels_like": 289.7,
+      "temp": 19.17,
+      "feels_like": 16.55,
       "pressure": 1016,
       "humidity": 57,
-      "dew_point": 283.72,
+      "dew_point": 10.57,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.98,
@@ -1111,7 +1069,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -1119,11 +1077,11 @@
     },
     {
       "dt": 1601424000,
-      "temp": 289.25,
-      "feels_like": 286.52,
+      "temp": 16.1,
+      "feels_like": 13.37,
       "pressure": 1017,
       "humidity": 61,
-      "dew_point": 281.9,
+      "dew_point": 8.75,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.43,
@@ -1132,7 +1090,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01d"
         }
       ],
@@ -1140,11 +1098,11 @@
     },
     {
       "dt": 1601427600,
-      "temp": 287.92,
-      "feels_like": 285.16,
+      "temp": 14.77,
+      "feels_like": 12.01,
       "pressure": 1018,
       "humidity": 61,
-      "dew_point": 280.68,
+      "dew_point": 7.53,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 3.05,
@@ -1153,7 +1111,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -1161,11 +1119,11 @@
     },
     {
       "dt": 1601431200,
-      "temp": 287.1,
-      "feels_like": 284.47,
+      "temp": 13.95,
+      "feels_like": 11.32,
       "pressure": 1018,
       "humidity": 63,
-      "dew_point": 280.34,
+      "dew_point": 7.19,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.76,
@@ -1174,7 +1132,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -1182,11 +1140,11 @@
     },
     {
       "dt": 1601434800,
-      "temp": 286.49,
-      "feels_like": 284.1,
+      "temp": 13.34,
+      "feels_like": 10.95,
       "pressure": 1019,
       "humidity": 65,
-      "dew_point": 280.09,
+      "dew_point": 6.94,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 2.39,
@@ -1195,7 +1153,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -1203,11 +1161,11 @@
     },
     {
       "dt": 1601438400,
-      "temp": 285.88,
-      "feels_like": 283.89,
+      "temp": 12.73,
+      "feels_like": 10.74,
       "pressure": 1019,
       "humidity": 66,
-      "dew_point": 279.85,
+      "dew_point": 6.7,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 1.7,
@@ -1216,7 +1174,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -1224,11 +1182,11 @@
     },
     {
       "dt": 1601442000,
-      "temp": 285.29,
-      "feels_like": 283.7,
+      "temp": 12.14,
+      "feels_like": 10.55,
       "pressure": 1019,
       "humidity": 68,
-      "dew_point": 279.59,
+      "dew_point": 6.44,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 1.09,
@@ -1237,7 +1195,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -1245,11 +1203,11 @@
     },
     {
       "dt": 1601445600,
-      "temp": 284.91,
-      "feels_like": 283.57,
+      "temp": 11.76,
+      "feels_like": 10.42,
       "pressure": 1018,
       "humidity": 68,
-      "dew_point": 279.37,
+      "dew_point": 6.22,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 0.62,
@@ -1258,7 +1216,7 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
           "icon": "01n"
         }
       ],
@@ -1266,11 +1224,11 @@
     },
     {
       "dt": 1601449200,
-      "temp": 284.69,
-      "feels_like": 283.29,
+      "temp": 11.54,
+      "feels_like": 10.14,
       "pressure": 1018,
       "humidity": 68,
-      "dew_point": 279.11,
+      "dew_point": 5.96,
       "clouds": 0,
       "visibility": 10000,
       "wind_speed": 0.64,
@@ -1279,7 +1237,49 @@
         {
           "id": 800,
           "main": "Clear",
-          "description": "clear sky",
+          "description": "ясно",
+          "icon": "01n"
+        }
+      ],
+      "pop": 0
+    },
+    {
+      "dt": 1601452800,
+      "temp": 11.51,
+      "feels_like": 9.73,
+      "pressure": 1018,
+      "humidity": 68,
+      "dew_point": 5.94,
+      "clouds": 0,
+      "visibility": 10000,
+      "wind_speed": 1.17,
+      "wind_deg": 253,
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "ясно",
+          "icon": "01n"
+        }
+      ],
+      "pop": 0
+    },
+    {
+      "dt": 1601456400,
+      "temp": 11.39,
+      "feels_like": 9.49,
+      "pressure": 1018,
+      "humidity": 69,
+      "dew_point": 5.98,
+      "clouds": 0,
+      "visibility": 10000,
+      "wind_speed": 1.38,
+      "wind_deg": 252,
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "ясно",
           "icon": "01n"
         }
       ],

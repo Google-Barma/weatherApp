@@ -49,23 +49,15 @@ export default {
   },
 
   async fetchCurrentGeolocationWeatherOnSevenDay() {
-    // const url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&exclude=daily&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+    // const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&exclude=daily&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
 
-    const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&exclude=daily&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
-
-    // const url =
-    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/temp.json';
+    const url =
+      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/dailyTemp.json';
 
     try {
       const response = await fetch(url);
-      // const { weather, main, name, sys, timezone } = await response.json();
-      const data = await response.json();
 
-      // this.getWeatherData(this.onSevenDay, {
-      //   weather,
-      //   main,
-      //   name,
-      // });
+      const data = await response.json();
 
       return data;
     } catch (error) {
@@ -89,6 +81,11 @@ export default {
 
   getLocaleDateNow() {
     const date = new Date();
+
+    const a = 1601449200;
+    const b = Date.now();
+    const c = new Date(a + b);
+    console.log(c);
 
     return date.toLocaleDateString();
   },

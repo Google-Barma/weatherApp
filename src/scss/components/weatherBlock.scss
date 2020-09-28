@@ -1,10 +1,60 @@
 .weather {
   &__block {
+    font-family: $main-font;
+    position: relative;
+    color: $white-color;
     padding: rem(25);
     border: solid 2px #008080;
     border-radius: 10px;
     background-color: #0093e9;
     background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
     background-repeat: no-repeat;
+  }
+
+  &__title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: rem(30);
+  }
+
+  &__title {
+    font-family: $second-font;
+    font-size: rem(45);
+  }
+
+  &__date {
+    font-size: rem(20);
+    text-align: right;
+  }
+
+  &__text-container p:not(:last-of-type) {
+    margin-bottom: rem(15);
+  }
+
+  &__temp {
+    font-size: rem(60);
+    font-weight: 500;
+    display: inline-block;
+    margin-right: rem(35);
+  }
+
+  &__description {
+    display: inline-block;
+
+    font-size: rem(30);
+  }
+
+  &__image {
+    position: absolute;
+    right: rem(20);
+    bottom: rem(0);
+    width: rem(150);
+    margin-left: auto;
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+
+  &__description {
+    text-transform: capitalize;
   }
 }

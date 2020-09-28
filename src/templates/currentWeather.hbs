@@ -1,13 +1,15 @@
 <div class="weather__block">
-    <p class="weather__date">{{dateNow}}</p>
-    <h3 class="weather__title">Город: {{name}}</h3>
-    <div class="weather__text-container">
-        <p class="weather__temp">Температура: {{currentTemp}}</p>
-        <p class="weather__max-temp">Макс. температура: {{maxTemp}}</p>
-        <p class="weather__max-temp">Мин. температура: {{minTemp}}</p>
-        <p class="weather__description">{{weatherDescription}}</p>
-        <p class="weather__date">Сегодня: </p>
+    <div class="weather__title-block">
+        <h3 class="weather__title">{{name}}</h3>
+        <p class="weather__date">{{dateNow}}</p>
     </div>
-    <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image">
+    <div class="weather__text-container">
+        <p class="weather__temp">{{currentTemp}}&#176;</p>
+        <p class="weather__description">{{weatherDescription}}</p>
+        <p class="weather__max-temp">Макс. температура: {{maxTemp}}&#176;</p>
+        <p class="weather__max-temp">Мин. температура: {{minTemp}}&#176;</p>
+
+    </div>
+    <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image" width="200">
 
 </div>

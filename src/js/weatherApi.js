@@ -5,6 +5,7 @@ export default {
   cityCurrentWeather: {},
   currentWeather: {},
   currentPosition: {},
+  onSevenDay: {},
 
   async fetchFetchCurrentWeatherInCity() {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.queryCityName}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
@@ -26,7 +27,8 @@ export default {
   },
 
   async fetchCurrentGeolocationWeather() {
-    // const url = `http://api.openweathermap.org/data/2.5/weather?q=lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+    // const url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+
     const url =
       'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/temp.json';
 
@@ -41,6 +43,31 @@ export default {
       });
 
       return this.currentWeather;
+    } catch (error) {
+      console.log(error);
+    }
+  },
+
+  async fetchCurrentGeolocationWeatherOnSevenDay() {
+    // const url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&exclude=daily&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+
+    const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&exclude=daily&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+
+    // const url =
+    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/temp.json';
+
+    try {
+      const response = await fetch(url);
+      // const { weather, main, name, sys, timezone } = await response.json();
+      const data = await response.json();
+
+      // this.getWeatherData(this.onSevenDay, {
+      //   weather,
+      //   main,
+      //   name,
+      // });
+
+      return data;
     } catch (error) {
       console.log(error);
     }

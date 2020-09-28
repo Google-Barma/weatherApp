@@ -21,7 +21,6 @@ function getCurrentWeatherInCity() {
     .fetchFetchCurrentWeatherInCity()
     .then(data => {
       createWeatherMarkup(data);
-      console.log(weatherApi.currentPosition.latitude);
     })
     .catch(error => console.log(error));
 }

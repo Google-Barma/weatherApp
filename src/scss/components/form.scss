@@ -1,5 +1,6 @@
 .town-query {
   &__form {
+    font-family: $main-font;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -7,9 +8,9 @@
   }
 
   &__input {
-    flex-basis: rem(300);
+    flex-basis: rem(500);
     height: rem(30);
-    border: solid 2px #008080;
+    border: solid 2px $input-border-color;
     border-radius: 10px;
     margin-right: rem(30);
     outline: none;
@@ -17,11 +18,12 @@
   }
 
   &__submit {
-    border: solid 1px #008080;
+    border: solid 1px $input-border-color;
     border-radius: 10px;
     color: #ffffff;
-    background-color: turquoise;
+    background-color: #40e0d0;
     outline: none;
+    padding: 0 rem(15) 0 rem(15);
     box-shadow: inset 0px 0px 6px 0px #535353;
   }
 }

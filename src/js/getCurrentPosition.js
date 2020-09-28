@@ -10,8 +10,11 @@ function getCurrentPosition() {
   });
 }
 
+//можно показывать погоду по координатам из локал диска, а если координаты отличаются, то догружать потом по новым координатам
 getCurrentPosition()
   .then(resolve => {
     weatherApi.currentPosition = resolve.coords;
   })
-  .catch(error => console.log(error));
+  .catch(error => {
+    console.log(error);
+  });

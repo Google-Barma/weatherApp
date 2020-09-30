@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 export default {
   apiKey: '&appid=e8a30fe387c8d6d768122e7ce2ffee5c',
   baseURL: 'api.openweathermap.org/data/2.5/weather',
@@ -48,7 +50,7 @@ export default {
     }
   },
 
-  async fetchCurrentGeolocationWeatherOnSevenDay() {
+  async fetchCurrentGeolocationWeatherOnDaily() {
     // const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&exclude=daily&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
 
     const url =
@@ -58,6 +60,7 @@ export default {
       const response = await fetch(url);
 
       const data = await response.json();
+      console.log(data);
 
       return data;
     } catch (error) {
@@ -76,17 +79,25 @@ export default {
     position.weatherDescription = weather[0].description;
     position.name = name;
     position.weatherDescriptionIcon = `https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
-    position.dateNow = this.getLocaleDateNow();
+    position.dateNow = this.getNowDate();
+    position.timeNow = this.getTimeNow();
   },
 
-  getLocaleDateNow() {
-    const date = new Date();
+  getNowDate() {
+    const now = moment().locale('ru');
 
-    const a = 1601449200;
-    const b = Date.now();
-    const c = new Date(a + b);
-    console.log(c);
-
-    return date.toLocaleDateString();
+    return now.format('dddd, DD MMMM');
   },
+
+  getTimeNow() {
+    const now = moment().locale('ru');
+
+    return now.format(' h:mm');
+  },
+
+  // getLocaleDateNow() {
+  //   const date = new Date();
+
+  //   return date.toLocaleDateString();
+  // },
 };

@@ -28,6 +28,12 @@
     text-align: right;
   }
 
+  &__time {
+    display: block;
+    font-size: rem(30);
+    text-align: right;
+  }
+
   &__text-container p:not(:last-of-type) {
     margin-bottom: rem(15);
   }
@@ -41,7 +47,7 @@
 
   &__description {
     display: inline-block;
-
+    text-transform: uppercase;
     font-size: rem(30);
   }
 

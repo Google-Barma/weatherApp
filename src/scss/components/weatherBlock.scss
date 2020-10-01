@@ -19,7 +19,8 @@
   }
 
   &__title {
-    font-family: $second-font;
+    font-family: $main-font;
+    font-style: italic;
     font-size: rem(45);
   }
 
@@ -55,7 +56,7 @@
     position: absolute;
     right: rem(20);
     bottom: rem(0);
-    width: rem(150);
+    width: rem(130);
     margin-left: auto;
     filter: drop-shadow(5px 5px 5px #222);
   }

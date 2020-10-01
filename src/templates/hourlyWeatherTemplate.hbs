@@ -1,18 +1,17 @@
-<div class="weather__block">
-    <div class="weather__title-block">
-        <h3 class="weather__title">{{name}}</h3>
-        <div class="weather__date-block">
-            <p class="weather__date">{{dateNow}}</p>
-            <p class="weather__time">{{timeNow}}</p>
+{{#each this}}
+<div class="swiper-slide">
+    <div class="weather__block_current-time">
+        <div class="weather__title-block">
+            <div class="weather__date-block">
+                <p class="weather__time">{{timeNow}}</p>
+            </div>
         </div>
+        <div class="weather__text-container">
+            <p class="weather__temp">{{temp}}&#176;</p>
+            <p class="weather__description">{{weatherDescription}}</p>
+        </div>
+        <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image" width="200">
     </div>
-    <div class="weather__text-container">
-        <p class="weather__temp">{{currentTemp}}&#176;</p>
-        <p class="weather__description">{{weatherDescription}}</p>
-        <p class="weather__max-temp">Макс. температура: {{maxTemp}}&#176;</p>
-        <p class="weather__max-temp">Мин. температура: {{minTemp}}&#176;</p>
-
-    </div>
-    <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image" width="200">
-
 </div>
+
+{{/each}}

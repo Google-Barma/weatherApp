@@ -1,22 +1,22 @@
 const moment = require('moment');
 
 export default {
-  apiKey: '&appid=e8a30fe387c8d6d768122e7ce2ffee5c',
+  apiKey: 'e8a30fe387c8d6d768122e7ce2ffee5c',
   baseURL: 'api.openweathermap.org/data/2.5/weather',
   queryCityName: '',
   cityCurrentWeather: {},
   currentWeather: {},
   currentPosition: {},
-  onSevenDay: {},
+  hoarly: {},
 
   async fetchFetchCurrentWeatherInCity() {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.queryCityName}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.queryCityName}&units=metric&lang=ru&appid=${this.apiKey}`;
 
     try {
       const response = await fetch(url);
       const { weather, main, name, sys, timezone } = await response.json();
 
-      this.getWeatherData(this.cityCurrentWeather, {
+      this.getCurrentWeatherData(this.cityCurrentWeather, {
         weather,
         main,
         name,
@@ -32,17 +32,20 @@ export default {
     // const url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
 
     const url =
-      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/temp.json';
+      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
 
     try {
       const response = await fetch(url);
       const { weather, main, name, sys, timezone } = await response.json();
 
-      this.getWeatherData(this.currentWeather, {
+      this.getCurrentWeatherData(this.currentWeather, {
         weather,
         main,
         name,
       });
+
+      const currentWeather = JSON.stringify(this.currentWeather);
+      localStorage.setItem('currentWeather', currentWeather);
 
       return this.currentWeather;
     } catch (error) {
@@ -50,19 +53,20 @@ export default {
     }
   },
 
-  async fetchCurrentGeolocationWeatherOnDaily() {
+  async fetchCurrentGeolocationWeatherhourly() {
     // const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentPosition.latitude}&lon=${this.currentPosition.longitude}&exclude=daily&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
 
     const url =
-      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/dailyTemp.json';
+      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/hourlyTemp.json';
 
     try {
       const response = await fetch(url);
-
       const data = await response.json();
-      console.log(data);
-
-      return data;
+      const hourlyData = data.hourly;
+      this.hoarly.temp = hourlyData.map(item => Math.round(item.temp));
+      this.hoarly.dt = hourlyData.map(item => item.dt);
+      this.hoarly.weather = hourlyData.map(item => item.weather);
+      return this.hoarly;
     } catch (error) {
       console.log(error);
     }
@@ -72,7 +76,7 @@ export default {
     this.queryCityName = value;
   },
 
-  getWeatherData(position, { weather, main, name }) {
+  getCurrentWeatherData(position, { weather, main, name }) {
     position.currentTemp = Math.round(main.temp);
     position.maxTemp = Math.round(main.temp_max);
     position.minTemp = Math.round(main.temp_min);
@@ -94,10 +98,4 @@ export default {
 
     return now.format(' h:mm');
   },
-
-  // getLocaleDateNow() {
-  //   const date = new Date();
-
-  //   return date.toLocaleDateString();
-  // },
 };

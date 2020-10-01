@@ -3,14 +3,14 @@
     <div class="weather__block_current-time">
         <div class="weather__title-block">
             <div class="weather__date-block">
-                <p class="weather__time">{{timeNow}}</p>
+                <p class="weather__time">{{this.dt}}</p>
             </div>
         </div>
         <div class="weather__text-container">
-            <p class="weather__temp">{{temp}}&#176;</p>
-            <p class="weather__description">{{weatherDescription}}</p>
+            <p class="weather__temp">{{this.temp}}&#176;</p>
+            <p class="weather__description">{{this.weatherDescription}}</p>
         </div>
-        <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image" width="200">
+        <img src={{this.weatherDescriptionIcon}} alt="weather image" class="weather__image" width="200">
     </div>
 </div>
 

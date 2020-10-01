@@ -1,15 +1,15 @@
-import getCurrentPosition from './get-current-position';
+import refs from './refs';
+
 import weatherApi from './weather-api';
 import currentMainWeather from '../templates/current-main-weather.hbs';
 
-function makeMarkup() {
+function makeMainWeatherMarkup(position) {
   weatherApi.fetchCurrentLocationWeather().then(data => {
     const markup = currentMainWeather(data);
+
+    refs.mainWeatherBlock.innerHTML = '';
+    refs.mainWeatherBlock.insertAdjacentHTML('beforeend', markup);
   });
 }
 
-getCurrentPosition().then(data => {
-  console.log(data);
-});
-
-makeMarkup();
+makeMainWeatherMarkup(refs.mainWeatherBlock);

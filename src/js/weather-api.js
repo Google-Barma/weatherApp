@@ -56,7 +56,9 @@ export default {
 
   async fetchCurrentLocation7DayWeather() {
     await this._getCurrentPosition();
-    const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=${this.units}&lang=${this.lang}&exclude=current,minutely,hourly,alerts&appid=${this.apiKey}`;
+    // const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=${this.units}&lang=${this.lang}&exclude=current,minutely,hourly,alerts&appid=${this.apiKey}`;
+    const url =
+      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/dayli-7days-weather.json';
 
     try {
       const response = await fetch(url);

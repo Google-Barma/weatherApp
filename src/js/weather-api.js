@@ -4,13 +4,37 @@ import getCurrentPosition from './get-current-position';
 export default {
   apiKey: 'e8a30fe387c8d6d768122e7ce2ffee5c',
   baseURL: 'https://api.openweathermap.org/data/2.5/',
+  lang: 'ru',
   currentCoords: {},
+  selectedCity: null,
 
   async fetchCurrentLocationWeather() {
     await this._setCurrentPosition();
     await this._getCurrentPosition();
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=metric&lang=ru&appid=e8a30fe387c8d6d768122e7ce2ffee5c`;
+    // const url = `${this.baseURL}weather?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
+
+    const url =
+      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
+
+    try {
+      const response = await fetch(url);
+      const { weather, main, name } = await response.json();
+
+      return this._getCurrentWeatherData({
+        weather,
+        main,
+        name,
+      });
+    } catch (error) {
+      alert('Нужна геолокация');
+    }
+  },
+
+  async fetchSelectedCityWeather() {
+    await this._getSelectedCity();
+
+    const url = `${this.baseURL}weather?q=${this.selectedCity}&units=metric&lang=${lang}&appid=${this.apiKey}`;
 
     // const url =
     //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
@@ -26,6 +50,29 @@ export default {
       });
     } catch (error) {
       alert('Нет такого города');
+    }
+  },
+
+  async fetchCurrentLocation4DaysWeather() {
+    await this._setCurrentPosition();
+    await this._getCurrentPosition();
+
+    const url = `${this.baseURL}weather?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
+
+    // const url =
+    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
+
+    try {
+      const response = await fetch(url);
+      const { weather, main, name } = await response.json();
+
+      return this._getCurrentWeatherData({
+        weather,
+        main,
+        name,
+      });
+    } catch (error) {
+      alert('Нужна геолокация');
     }
   },
 
@@ -61,6 +108,12 @@ export default {
     coords = JSON.parse(coords);
 
     this.currentCoords = coords;
+  },
+
+  _getSelectedCity() {
+    let city = localStorage.getItem('requestedCity');
+
+    this.selectedCity = city;
   },
 
   _getNowDate() {

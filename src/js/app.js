@@ -1,15 +1,36 @@
 import refs from './refs';
-
 import weatherApi from './weather-api';
-import currentMainWeather from '../templates/current-main-weather.hbs';
+import currentMainWeatherTemplate from '../templates/current-main-weather.hbs';
 
-function makeMainWeatherMarkup(position) {
+function makeMainWeatherMarkup() {
   weatherApi.fetchCurrentLocationWeather().then(data => {
-    const markup = currentMainWeather(data);
+    const markup = currentMainWeatherTemplate(data);
 
     refs.mainWeatherBlock.innerHTML = '';
     refs.mainWeatherBlock.insertAdjacentHTML('beforeend', markup);
   });
 }
+
+function makeMainCityWeatherMarkup() {
+  weatherApi.fetchSelectedCityWeather().then(data => {
+    const markup = currentMainWeatherTemplate(data);
+
+    refs.mainWeatherBlock.innerHTML = '';
+    refs.mainWeatherBlock.insertAdjacentHTML('beforeend', markup);
+  });
+}
+
+function saveCityNameToLocalStorage(event) {
+  const requestedCity = event.target.elements.query.value;
+  localStorage.setItem('requestedCity', requestedCity);
+}
+
+refs.cityForm.addEventListener('submit', event => {
+  event.preventDefault();
+
+  saveCityNameToLocalStorage(event);
+
+  makeMainCityWeatherMarkup();
+});
 
 makeMainWeatherMarkup(refs.mainWeatherBlock);

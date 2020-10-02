@@ -12,13 +12,17 @@
           action="#"
           class="town-query__form js-town-query__form"
           id="city-form"
+          autocomplete="off"
         >
           <input
             type="text"
-            class="town-query__input"
+            class="town-query__input cities"
             name="query"
             placeholder="Введите город"
           />
+          <div class="cities">
+            <ul class="cities__list"></ul>
+          </div>
           <button class="town-query__submit" type="submit">GO</button>
         </form>
         <div class="weather__main"></div>

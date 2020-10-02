@@ -3,6 +3,7 @@ import weatherApi from './weather-api';
 import currentMainWeatherTemplate from '../templates/current-main-weather.hbs';
 import dailyWeatherTemplate from '../templates/daily-weather-template.hbs';
 import './swipe-slider';
+import citiesApi from './cities-api';
 
 function makeMainWeatherMarkup() {
   weatherApi.fetchCurrentLocationWeather().then(data => {

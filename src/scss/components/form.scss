@@ -8,6 +8,7 @@
   }
 
   &__input {
+    font-style: italic;
     flex-basis: rem(500);
     height: rem(30);
     border: solid 2px $input-border-color;

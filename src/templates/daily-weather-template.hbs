@@ -1,20 +1,24 @@
 {{#each this}}
-<div class="weather__block">
-    <div class="weather__title-block">
+<div class="swiper-slide">
+    <div class="swiper-slider__container">
+        <div class="weather__title-block">
 
-        <div class="weather__date-block">
-            <p class="weather__date">{{dt}}</p>
-            <p class="weather__time">{{time}}</p>
+            <div class="weather__date-block">
+                <p class="weather__date">{{dt}}</p>
+                <p class="weather__time">{{time}}</p>
+            </div>
+
         </div>
-    </div>
-    <div class="weather__text-container">
-        <p class="weather__temp">темп. днем: {{temp.day}}&#176;</p>
-        <p class="weather__description"></p>
-        <p class="weather__max-temp">Макс. температура: {{temp.max}}&#176;</p>
-        <p class="weather__max-temp">Мин. температура: {{temp.min}}&#176;</p>
 
+        <div class="weather__text-container">
+            <p class="weather__temp">темп. днем: {{temp.day}}&#176;</p>
+            <p class="weather__description"></p>
+            <p class="weather__max-temp">Макс. температура: {{temp.max}}&#176;</p>
+            <p class="weather__max-temp">Мин. температура: {{temp.min}}&#176;</p>
+
+        </div>
+        <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image" width="100">
     </div>
-    <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image" width="100">
 
 </div>
 

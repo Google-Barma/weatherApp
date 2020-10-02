@@ -2,6 +2,7 @@ import refs from './refs';
 import weatherApi from './weather-api';
 import currentMainWeatherTemplate from '../templates/current-main-weather.hbs';
 import dailyWeatherTemplate from '../templates/daily-weather-template.hbs';
+import './swipe-slider';
 
 function makeMainWeatherMarkup() {
   weatherApi.fetchCurrentLocationWeather().then(data => {
@@ -24,8 +25,11 @@ function makeMainCityWeatherMarkup() {
 function makeGeo7DayWeatherMarkup() {
   weatherApi.fetchCurrentLocation7DayWeather().then(filteredWeather => {
     filteredWeather = filteredWeather.slice(1);
-    console.log(filteredWeather);
+
     const markup = dailyWeatherTemplate(filteredWeather);
+
+    refs.swipeSlider.innerHTML = '';
+    refs.swipeSlider.insertAdjacentHTML('afterbegin', markup);
   });
 }
 

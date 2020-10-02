@@ -12,7 +12,7 @@ const mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
 
-  spaceBetween: 2,
+  spaceBetween: 0,
 
   effect: 'cube',
 

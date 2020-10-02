@@ -13,10 +13,10 @@ export default {
     await this._setCurrentPosition();
     await this._getCurrentPosition();
 
-    const url = `${this.baseURL}weather?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
+    // const url = `${this.baseURL}weather?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
 
-    // const url =
-    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
+    const url =
+      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
 
     try {
       const response = await fetch(url);
@@ -35,10 +35,10 @@ export default {
   async fetchSelectedCityWeather() {
     await this._getSelectedCity();
 
-    const url = `${this.baseURL}weather?q=${this.selectedCity}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
+    // const url = `${this.baseURL}weather?q=${this.selectedCity}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
 
-    // const url =
-    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
+    const url =
+      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
 
     try {
       const response = await fetch(url);

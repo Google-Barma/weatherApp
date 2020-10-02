@@ -1,11 +1,15 @@
 .weather {
+  &__main {
+    margin-bottom: rem(45);
+  }
+
   &__block {
     font-family: $main-font;
     position: relative;
     color: $white-color;
     padding: rem(25);
     border: solid 2px #008080;
-    border-radius: 10px;
+    border-radius: rem(20);
     background-color: #0093e9;
     background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
     background-repeat: no-repeat;
@@ -22,6 +26,7 @@
     font-family: $main-font;
     font-style: italic;
     font-size: rem(45);
+    text-shadow: 1px 2px 2px rgb(102, 102, 102);
   }
 
   &__date {

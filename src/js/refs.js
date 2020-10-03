@@ -4,5 +4,5 @@ export default {
   swipeSlider: document.querySelector('.swiper-wrapper'),
 
   citiesInput: document.querySelector('.js-cities-query'),
-  citiesList: document.querySelector('.cities__list'),
+  citiesList: document.querySelector('.js-cities__list'),
 };

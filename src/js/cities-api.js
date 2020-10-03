@@ -16,8 +16,7 @@ export default {
         const citiesObj = {};
 
         citiesObj.name = item.name;
-        citiesObj.country = item.country_name;
-        console.log(citiesObj);
+
         return citiesObj;
       });
 
@@ -33,13 +32,17 @@ export default {
 
       refs.citiesList.innerHTML = '';
       refs.citiesList.insertAdjacentHTML('afterbegin', markup);
+
+      this._onClickListItem();
     });
   },
 
-  onClickListItem() {
-    const listItem = document.querySelector('.js-cities-item');
-    listItem.addEventListener('click', event => {
-      console.log(event.target);
+  _onClickListItem() {
+    refs.citiesList.addEventListener('click', event => {
+      const selectedCityName = event.target.textContent;
+      refs.citiesInput.value = event.target.textContent;
+
+      //   localStorage.setItem('sectedCityName', selectedCityName);
     });
   },
 

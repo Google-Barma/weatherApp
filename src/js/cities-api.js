@@ -37,12 +37,14 @@ export default {
     });
   },
 
-  _onClickListItem() {
-    refs.citiesList.addEventListener('click', event => {
-      const selectedCityName = event.target.textContent;
-      refs.citiesInput.value = event.target.textContent;
+  _handleOnClickListItem() {
+    const selectedCityName = event.target.textContent;
+    refs.citiesInput.value = event.target.textContent;
+  },
 
-      //   localStorage.setItem('sectedCityName', selectedCityName);
+  _onClickListItem() {
+    refs.citiesList.addEventListener('click', this._handleOnClickListItem, {
+      once: true,
     });
   },
 

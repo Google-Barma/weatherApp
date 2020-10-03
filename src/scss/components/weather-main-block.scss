@@ -55,6 +55,11 @@
     display: inline-block;
     text-transform: uppercase;
     font-size: rem(30);
+    font-style: italic;
+
+    &::first-letter {
+      font-size: rem(45);
+    }
   }
 
   &__image {
@@ -64,9 +69,5 @@
     width: rem(130);
     margin-left: auto;
     filter: drop-shadow(5px 5px 5px #222);
-  }
-
-  &__description {
-    text-transform: capitalize;
   }
 }

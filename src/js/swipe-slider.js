@@ -3,6 +3,10 @@ import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 const mySwiper = new Swiper('.swiper-container', {
+  // my options
+  effect: 'fade',
+
+  init: true,
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -11,10 +15,6 @@ const mySwiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
   },
-
-  spaceBetween: 0,
-
-  effect: 'cube',
 
   // Navigation arrows
   navigation: {
@@ -27,3 +27,5 @@ const mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-scrollbar',
   },
 });
+
+export default mySwiper;

@@ -12,8 +12,78 @@ export default {
   selectedCity: null,
   units: 'metric',
 
+  async _fetchCurrentLocationWeather() {
+    await this._setCurrentPosition();
+    await this._getCurrentPosition();
+
+    const url = `${this.baseURL}weather?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
+
+    // const url =
+    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
+
+    try {
+      const response = await fetch(url);
+      const { weather, main, name } = await response.json();
+
+      return this._convertCurrentWeatherData({
+        weather,
+        main,
+        name,
+      });
+    } catch (error) {
+      alert('Нужна геолокация');
+    }
+  },
+
+  async _fetchSelectedCityWeather() {
+    await this._getSelectedCity();
+
+    const url = `${this.baseURL}weather?q=${this.selectedCity}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
+
+    // const url =
+    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
+
+    try {
+      const response = await fetch(url);
+      const { weather, main, name } = await response.json();
+
+      return this._convertCurrentWeatherData({
+        weather,
+        main,
+        name,
+      });
+    } catch (error) {
+      alert('Нет такого города');
+    }
+  },
+
+  async _fetchCurrentLocation7DayWeather() {
+    await this._getCurrentPosition();
+    const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=${this.units}&lang=${this.lang}&exclude=current,minutely,hourly,alerts&appid=${this.apiKey}`;
+    // const url =
+    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/dayli-7days-weather.json';
+
+    try {
+      const response = await fetch(url);
+      const { daily } = await response.json();
+
+      const filteredWeather = daily.map(item => {
+        const { dt, temp, weather } = item;
+
+        return { dt, temp, weather };
+      });
+
+      this._convert7DaysFilteredData(filteredWeather);
+
+      return filteredWeather;
+    } catch (error) {
+      console.log('seven days: Нужна геолокация', error);
+    }
+  },
+
   _convertCurrentWeatherData({ weather, main, name }) {
     const weatherData = {};
+    localStorage.setItem('currentCityName', name);
     weatherData.currentTemp = Math.round(main.temp);
     weatherData.maxTemp = Math.round(main.temp_max);
     weatherData.minTemp = Math.round(main.temp_min);
@@ -28,6 +98,7 @@ export default {
 
   _convert7DaysFilteredData(data) {
     data.map(item => {
+      item.name = localStorage.getItem('currentCityName');
       item.time = moment.unix(item.dt).format('HH:mm');
       item.dt = moment.unix(item.dt).format('dddd, DD MMMM');
       item.temp.day = Math.round(item.temp.day);
@@ -76,82 +147,13 @@ export default {
     return now.format(' h:mm');
   },
 
-  async fetchCurrentLocationWeather() {
-    await this._setCurrentPosition();
-    await this._getCurrentPosition();
-
-    // const url = `${this.baseURL}weather?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
-
-    const url =
-      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
-
-    try {
-      const response = await fetch(url);
-      const { weather, main, name } = await response.json();
-
-      return this._convertCurrentWeatherData({
-        weather,
-        main,
-        name,
-      });
-    } catch (error) {
-      alert('Нужна геолокация');
-    }
-  },
-
-  async fetchSelectedCityWeather() {
-    await this._getSelectedCity();
-
-    const url = `${this.baseURL}weather?q=${this.selectedCity}&units=metric&lang=${this.lang}&appid=${this.apiKey}`;
-
-    // const url =
-    //   'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/currentWeather.json';
-
-    try {
-      const response = await fetch(url);
-      const { weather, main, name } = await response.json();
-
-      return this._convertCurrentWeatherData({
-        weather,
-        main,
-        name,
-      });
-    } catch (error) {
-      alert('Нет такого города');
-    }
-  },
-
-  async fetchCurrentLocation7DayWeather() {
-    await this._getCurrentPosition();
-    // const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.currentCoords.lat}&lon=${this.currentCoords.long}&units=${this.units}&lang=${this.lang}&exclude=current,minutely,hourly,alerts&appid=${this.apiKey}`;
-    const url =
-      'https://raw.githubusercontent.com/Google-Barma/weatherApp/master/src/dayli-7days-weather.json';
-
-    try {
-      const response = await fetch(url);
-      const { daily } = await response.json();
-
-      const filteredWeather = daily.map(item => {
-        const { dt, temp, weather } = item;
-
-        return { dt, temp, weather };
-      });
-
-      this._convert7DaysFilteredData(filteredWeather);
-
-      return filteredWeather;
-    } catch (error) {
-      console.log('seven days: Нужна геолокация', error);
-    }
-  },
-
   saveCityNameToLocalStorage(event) {
     const requestedCity = event.target.elements.query.value;
     localStorage.setItem('requestedCity', requestedCity);
   },
 
   makeMainWeatherMarkup() {
-    this.fetchCurrentLocationWeather().then(data => {
+    this._fetchCurrentLocationWeather().then(data => {
       const markup = currentMainWeatherTemplate(data);
 
       refs.mainWeatherBlock.innerHTML = '';
@@ -160,7 +162,7 @@ export default {
   },
 
   makeMainCityWeatherMarkup() {
-    this.fetchSelectedCityWeather().then(data => {
+    this._fetchSelectedCityWeather().then(data => {
       const markup = currentMainWeatherTemplate(data);
 
       refs.mainWeatherBlock.innerHTML = '';
@@ -169,7 +171,7 @@ export default {
   },
 
   makeGeo7DayWeatherMarkup() {
-    this.fetchCurrentLocation7DayWeather().then(filteredWeather => {
+    this._fetchCurrentLocation7DayWeather().then(filteredWeather => {
       filteredWeather = filteredWeather.slice(1);
 
       const markup = dailyWeatherTemplate(filteredWeather);

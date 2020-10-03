@@ -1,4 +1,8 @@
 .town-query {
+  &__wrapper {
+    position: relative;
+  }
+
   &__form {
     font-family: $main-font;
     margin: 0 auto;
@@ -25,7 +29,12 @@
     background-color: #40e0d0;
     outline: none;
     padding: 0 rem(15) 0 rem(15);
-    box-shadow: 1px 2px 6px 0px #535353;
+    box-shadow: 1px 1px 4px 0px #535353;
+    transition: box-shadow 0.3s ease-out;
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 1px 2px 6px 0px #535353;
+    }
   }
 }

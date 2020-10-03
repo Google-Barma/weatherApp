@@ -8,23 +8,27 @@
   <body>
     <main>
       <div class="container">
-        <form
-          action="#"
-          class="town-query__form js-town-query__form"
-          id="city-form"
-          autocomplete="off"
-        >
-          <input
-            type="text"
-            class="town-query__input cities"
-            name="query"
-            placeholder="Введите город"
-          />
+        <div class="town-query__wrapper">
+          <form
+            action="#"
+            class="town-query__form js-town-query__form"
+            id="city-form"
+            autocomplete="off"
+          >
+            <input
+              type="text"
+              class="town-query__input js-cities-query"
+              name="query"
+              placeholder="Введите город"
+            />
+            <button class="town-query__submit" type="submit">GO</button>
+          </form>
+
           <div class="cities">
             <ul class="cities__list"></ul>
           </div>
-          <button class="town-query__submit" type="submit">GO</button>
-        </form>
+        </div>
+
         <div class="weather__main"></div>
 
         <!-- Slider main container -->

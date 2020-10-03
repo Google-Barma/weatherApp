@@ -2,9 +2,7 @@ import refs from './refs';
 import weatherApi from './weather-api';
 import citySearchingListTemplate from '../templates/city-searching-list.hbs';
 
-const debounce = require('lodash.debounce');
-
-const citiesQuery = {
+export default {
   city: null,
 
   async fetchCitiesName() {
@@ -28,22 +26,24 @@ const citiesQuery = {
       error => console.log(error);
     }
   },
-};
 
-refs.citiesInput.addEventListener('input', debounce(handleCitiesQuery, 1500));
+  _makeCitiesQueryList() {
+    this.fetchCitiesName().then(data => {
+      const markup = citySearchingListTemplate(data);
 
-function handleCitiesQuery(event) {
-  citiesQuery.city = event.target.value;
-  //   citiesQuery.fetchCitiesName();
-  createCityList();
-}
+      refs.citiesList.innerHTML = '';
+      refs.citiesList.insertAdjacentHTML('afterbegin', markup);
+    });
+  },
 
-function createCityList() {
-  citiesQuery.fetchCitiesName().then(data => {
-    const markup = citySearchingListTemplate(data);
+  onClickListItem() {
+    const listItem = document.querySelector('.js-cities-item');
+    listItem.addEventListener('click', event => {
+      console.log(event.target);
+    });
+  },
+
+  clearCitiesList() {
     refs.citiesList.innerHTML = '';
-    refs.citiesList.insertAdjacentHTML('afterbegin', markup);
-  });
-}
-
-export default citiesQuery;
+  },
+};

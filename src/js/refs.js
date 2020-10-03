@@ -3,6 +3,6 @@ export default {
   cityForm: document.querySelector('#city-form'),
   swipeSlider: document.querySelector('.swiper-wrapper'),
 
-  citiesInput: document.querySelector('.cities'),
+  citiesInput: document.querySelector('.js-cities-query'),
   citiesList: document.querySelector('.cities__list'),
 };

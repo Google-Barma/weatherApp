@@ -26,8 +26,11 @@ window.addEventListener('click', event => {
     citiesQueryApi.clearCitiesList();
   }
 });
+
 refs.citiesInput.addEventListener('input', debounce(handleCitiesQuery, 1500));
 refs.cityForm.addEventListener('submit', handleSubmitForm);
 
 weatherApi.makeMainWeatherMarkup(refs.mainWeatherBlock);
 weatherApi.makeGeo7DayWeatherMarkup();
+
+mySwiper.isBeginning();

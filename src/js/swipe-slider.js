@@ -6,12 +6,12 @@ const mySwiper = new Swiper('.swiper-container', {
   // my options
   effect: 'slide',
   slidesPerView: 3,
-  // loopedSlides: 7,
+  loopedSlides: 'auto',
+  loop: true,
 
   init: true,
   // Optional parameters
   // direction: 'horizontal',
-  // loop: true,
 
   // If we need pagination
   // pagination: {

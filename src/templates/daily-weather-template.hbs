@@ -3,10 +3,10 @@
     <div class="swiper-slider__container">
         <div class="daily-weather__title-block">
             <h3 class="daily-weather__title">{{name}}</h3>
-            <p class="daily-weather__temp">Темп. днем: {{temp.day}}&#176;</p>
             <div class="daily-weather__date-block">
                 <p class="daily-weather__date">{{dt}}</p>
-                <p class="daily-weather__time">{{time}}</p>
+                <p class="daily-weather__temp">Темп. днем: {{temp.day}}&#176;</p>
+                {{!-- <p class="daily-weather__time">{{time}}</p> --}}
             </div>
 
         </div>
@@ -18,7 +18,7 @@
             <p class="daily-weather__max-temp">Мин. температура: {{temp.min}}&#176;</p>
 
         </div>
-        <img src={{weatherDescriptionIcon}} alt="weather image" class="weather__image" width="100">
+        <img src={{weatherDescriptionIcon}} alt="weather image" class="daily-weather__image" width="100">
     </div>
 
 </div>

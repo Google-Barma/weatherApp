@@ -1,9 +1,9 @@
 .swiper-slider {
   &__container {
     font-family: $main-font;
-    position: relative;
+    // position: relative;
     color: $white-color;
-    padding: rem(25);
+    padding: rem(5);
     border: solid 2px #008080;
     border-radius: rem(20);
     background-color: #0093e9;

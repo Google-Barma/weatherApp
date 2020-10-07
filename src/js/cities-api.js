@@ -6,7 +6,7 @@ export default {
   city: null,
 
   async fetchCitiesName() {
-    const url = `http://autocomplete.travelpayouts.com/places2?term=${this.city}&locale=ru&types[city]=country`;
+    const url = `https://autocomplete.travelpayouts.com/places2?term=${this.city}&locale=ru&types[city]=country`;
 
     try {
       const response = await fetch(url);

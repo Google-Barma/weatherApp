@@ -33,4 +33,4 @@ refs.cityForm.addEventListener('submit', handleSubmitForm);
 weatherApi.makeMainWeatherMarkup(refs.mainWeatherBlock);
 weatherApi.makeGeo7DayWeatherMarkup();
 
-mySwiper.isBeginning();
+mySwiper.on();

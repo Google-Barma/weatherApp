@@ -33,4 +33,6 @@ refs.cityForm.addEventListener('submit', handleSubmitForm);
 weatherApi.makeMainWeatherMarkup(refs.mainWeatherBlock);
 weatherApi.makeGeo7DayWeatherMarkup();
 
-mySwiper.on();
+setTimeout(() => {
+  mySwiper();
+}, 500);

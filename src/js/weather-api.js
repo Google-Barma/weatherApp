@@ -2,6 +2,7 @@ const moment = require('moment');
 import getCurrentPosition from './get-current-position';
 import currentMainWeatherTemplate from '../templates/current-main-weather.hbs';
 import dailyWeatherTemplate from '../templates/daily-weather-template.hbs';
+import mySwiper from './swipe-slider';
 import refs from './refs';
 
 export default {

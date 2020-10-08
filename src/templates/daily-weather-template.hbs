@@ -5,20 +5,21 @@
             <h3 class="daily-weather__title">{{name}}</h3>
             <div class="daily-weather__date-block">
                 <p class="daily-weather__date">{{dt}}</p>
-                <p class="daily-weather__temp">Темп. днем: {{temp.day}}&#176;</p>
+                <p class="daily-weather__temp">Днем: <span class="daily-weather__temp--num">{{temp.day}}&#176;</span>
+                </p>
                 {{!-- <p class="daily-weather__time">{{time}}</p> --}}
             </div>
 
         </div>
+        <img src={{weatherDescriptionIcon}} alt="weather image" class="daily-weather__image" width="100">
 
         <div class="daily-weather__text-container">
 
             <p class="daily-weather__description">{{weatherDescription}}</p>
-            <p class="daily-weather__max-temp">Макс. температура: {{temp.max}}&#176;</p>
-            <p class="daily-weather__max-temp">Мин. температура: {{temp.min}}&#176;</p>
+            <p class="daily-weather__max-temp">Макс. темп: {{temp.max}}&#176;</p>
+            <p class="daily-weather__max-temp">Мин. темп: {{temp.min}}&#176;</p>
 
         </div>
-        <img src={{weatherDescriptionIcon}} alt="weather image" class="daily-weather__image" width="100">
     </div>
 
 </div>

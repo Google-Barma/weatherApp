@@ -3,7 +3,7 @@
     font-family: $main-font;
     // position: relative;
     color: $white-color;
-    padding: rem(5);
+    padding: rem(10);
     border: solid 2px #008080;
     border-radius: rem(20);
     background-color: #0093e9;
@@ -25,12 +25,24 @@
     text-align: right;
   }
 
-  &__time {
-    font-size: rem(30);
+  &__date {
+    margin-bottom: rem(15);
+  }
+
+  &__temp {
+    text-align: center;
+    &--num {
+      font-size: rem(35);
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
   }
 
   &__description {
     font-style: italic;
+    margin-bottom: rem(10);
 
     &::first-letter {
       text-transform: uppercase;

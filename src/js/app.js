@@ -35,4 +35,4 @@ weatherApi.makeGeo7DayWeatherMarkup();
 
 setTimeout(() => {
   mySwiper();
-}, 500);
+}, 300);

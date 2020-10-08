@@ -1,5 +1,4 @@
 import refs from './refs';
-import weatherApi from './weather-api';
 import citySearchingListTemplate from '../templates/city-searching-list.hbs';
 
 export default {
@@ -37,9 +36,9 @@ export default {
     });
   },
 
-  _handleOnClickListItem() {
+  _handleOnClickListItem(event) {
     const selectedCityName = event.target.textContent;
-    refs.citiesInput.value = event.target.textContent;
+    refs.citiesInput.value = selectedCityName;
   },
 
   _onClickListItem() {

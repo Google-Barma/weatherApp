@@ -72,7 +72,6 @@ export default {
 
         return { dt, temp, weather };
       });
-
       this._convert7DaysFilteredData(filteredWeather);
 
       return filteredWeather;

@@ -1,4 +1,5 @@
 const debounce = require('lodash.debounce');
+
 import mySwiper from './swipe-slider';
 import refs from './refs';
 import weatherApi from './weather-api';
@@ -35,4 +36,4 @@ weatherApi.makeGeo7DayWeatherMarkup();
 
 setTimeout(() => {
   mySwiper();
-}, 300);
+}, 1000);

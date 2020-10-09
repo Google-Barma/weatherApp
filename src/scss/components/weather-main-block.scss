@@ -19,7 +19,6 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    // margin-bottom: rem(30);
   }
 
   &__title {
@@ -54,11 +53,11 @@
   &__description {
     display: inline-block;
     text-transform: uppercase;
-    font-size: rem(30);
+    font-size: rem(25);
     font-style: italic;
 
     &::first-letter {
-      font-size: rem(45);
+      font-size: rem(35);
     }
   }
 
